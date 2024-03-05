@@ -37,6 +37,7 @@ public class EmployeeController {
 		return new ResponseEntity<List<Employee>>(listOfAllEmps, HttpStatus.OK);
 	}
 	
+	
 	@GetMapping("/emp/{empid}")
 	public ResponseEntity<Employee> getEmpById(@PathVariable("empid") Long empidL){
 		
